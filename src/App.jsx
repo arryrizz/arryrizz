@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 const CLAUDE_MODEL = "claude-sonnet-4-20250514";
 
 async function callClaude(messages, systemPrompt) {
-  const response = await fetch("https://api.anthropic.com/v1/messages", {
+  const response = await fetch("/api/claude", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
