@@ -524,7 +524,7 @@ export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const addScore = entry => setScores(s => [...s, entry]);
-  const currentTab = TABS.find(t => t.id === tab);
+  
 
   return (
     <div style={{ minHeight: "100vh", background: "#0c0a14", color: "#e2d9f3", fontFamily: "'Inter', system-ui, sans-serif" }}>
